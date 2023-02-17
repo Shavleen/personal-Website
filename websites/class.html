@@ -1,0 +1,168 @@
+
+<html>
+  <head>
+    <!-- Internal Stylesheets -->
+    <!-- Useful for styling a particular web page -->
+    <style>
+			body{
+				background-image: url(Carrot_cake.jpg) no-repeat center ;
+
+			}
+      p {
+        font-size: 20px;
+        font-weight: bold;
+        color: green;
+      }
+
+      div {
+        width: 100px;
+        height: 100px;
+        background: red;
+        margin: 50px 0px;
+      }
+
+      .blue {
+        background: blue;
+      }
+
+      .fence {
+        border: 2px dashed hotpink;
+      }
+
+      /** Applies to all spans with class name "strike" **/
+      span.strike {
+        text-decoration: line-through;
+      }
+
+      /** Applies to all img inside divs with class name puppies, and any element with class name "special" **/
+      div.puppies img,
+      .special {
+        height: 250px;
+        border-radius: 50%;
+      }
+
+      img {
+        border-radius: 50%;
+      }
+
+      table {
+        border: 1px solid black;
+        width: 50%;
+        border-spacing: 30px;
+      }
+
+      table tr th,
+      table tr td {
+        color: rgb(14, 179, 132);
+        border-radius: 10px;
+        border: 1px solid black;
+        padding: 10px;
+      }
+
+      .poem {
+        color: red;
+        line-height: 30px;
+      }
+
+      .poem .upper {
+        text-transform: uppercase;
+      }
+
+      .poem .lonely {
+        text-shadow: 20px 20px rgb(2, 255, 82);
+      }
+
+      /** Psuedo elements and psuedo selectors are very useful **/
+      .poem::first-letter {
+        font-size: xx-large;
+        font-family: Impact, Haettenschweiler, "Arial Narrow Bold", sans-serif;
+      }
+    </style>
+  </head>
+	
+
+  <body>
+    <p class="poem">
+      A void in my heart, The emptiness that craves to be filled to the brim
+      <span class="upper">Music seems to soothe</span> Every time my heart aches
+      I click shuffle The same sound about
+      <span class="lonely">loneliness</span> turns on It's like someone
+      screaming at me that I deserve it I deserve to be alone in this world
+      filled with many
+    </p>
+
+    <a href="#jennypage">Click me to go to panda!</a>
+
+    <p class="blue">I am a paragraph!</p>
+
+    <p>But I am a paragraph too :(</p>
+
+    <span class="fence strike">Strikeout</span>
+    <span>I am a span but I don't have class name strike</span>
+    <p class="strike">I have class name strike but I am not a span</p>
+    <mark class="strike">Mark</mark>
+
+    <!-- A div is really a container to group elements -->
+    <div class="special"></div>
+    <div class="blue fence"></div>
+
+    <!-- Lists can be inside another list-->
+    <ul>
+      <li>Apple</li>
+      <li>
+        Frozen Food
+        <ul>
+          <li>Ice Cream</li>
+          <li>Gelato</li>
+        </ul>
+      </li>
+    </ul>
+
+    <hr />
+
+    <table>
+      <!-- First Row -->
+      <tr>
+        <th>Company</th>
+        <th>Contact</th>
+        <th>Country</th>
+      </tr>
+
+      <!-- Second Row-->
+      <tr>
+        <td colspan="2">Alfreds Futterkiste</td>
+        <td>Germany</td>
+      </tr>
+
+      <!-- Third Row-->
+      <tr>
+        <td colspan="3">Centro comercial Moctezuma</td>
+      </tr>
+
+      <tr>
+        <td>Ernst Handel</td>
+        <td>Roland Mendel</td>
+        <td>Austria</td>
+      </tr>
+
+      <tr>
+        <td rowspan="3">Island Trading</td>
+        <td>Helen Bennett</td>
+        <td>UK</td>
+      </tr>
+
+      <tr>
+        <td>Yoshi Tannamuri</td>
+        <td>Canada</td>
+      </tr>
+
+      <tr>
+        <td>Giovanni Rovelli</td>
+        <td>Italy</td>
+      </tr>
+    </table>
+
+    <div class="puppies"><img src="puppy.jpg" /></div>
+    <span class="puppies"><img src="bunny.webp" /></span>
+  </body>
+</html>
