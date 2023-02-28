@@ -1,6 +1,16 @@
 <!DOCTYPE html>
   <html lang="en">
     <head>
+        <link rel="stylesheet" href="css/styles.css"/>
+      <style>
+        body{
+          background: rgb(0,173,226);
+          background: linear-gradient(
+          68.7deg,
+          rgb(95, 175, 201)15%, 
+          rgb(56, 101, 155, 0.746) 50%, 
+          rgb(95, 175, 201) 85%);}
+      </style>
       <meta charset="UTF-8">
         <!-- Requirement-1.A -->
         <title>Favorites</title>
@@ -11,26 +21,26 @@
         <!--div is a divsion for sections-->
         <!--This a div for hyperlinks in the naviation section-->
         <div class="topnav">
-          <a class="active" href="index.html">Home</a>
+          <a href="index.html">Home</a>
           <a href="interest.html#about">Interests</a>
-          <a href="Favorites.html">Favorites</a>
+          <a class = "active" href="Favorites.html">Favorites</a>
           <a href="https://www.youtube.com/watch?v=eBGIQ7ZuuiU&ab_channel=YouGotRickRolled">Other</a>
         </div>
       </nav>
     
     <!-- Requirement-1.B -->
     <!--The main header of the page-->   
-    <header>
+    <header class = "homehead">
         <h1>Shavleen's Favorite Things</h1>
-        <p>Learn more about Shavleen's favorites:</p>
+        <h2 class="head2">Consumable Items</h2>
     </header>
-
+    <img src="pic/logo.jpg" class = logo width="100" height="140">
+  
   
     <!-- Requirement-1.O -->
     <!--this is the table-->
     
-    <table border ="2"
-      cellpadding="15px">
+    <table>
         <!--The title of favorites on table-->
         <tr>
           <th>Snacks</th>
@@ -74,7 +84,7 @@
     <div>
           <!-- Requirement-1.F --> 
           <!--header of for materlist things-->
-    <h2>Materialist Things</h2>
+    <h2 class="head2">Materialist Things</h2>
         <!-- bullet points-->
       <ul>
         <li>Jackets</li>
@@ -100,64 +110,85 @@
     </div>
     
     <!--This a div for favorite songs-->
-    <div>
+    
       <!-- Requirement-1.F -->
       <!--header for songs-->
-      <h2>Favorite songs</h2>
+      <h2 class = "head2">Favorite songs</h2>
+      <div id="flex-container2">
         <!--monthy song header-->
-        <h3>Song of the month:</h3>
-          <!--Link for song with title and artist name-->
-          <a href="https://open.spotify.com/track/2DtUUBwYwEzKMTMDrc5EiO?si=4a965fee529f4a44">
-          "girls like me don't cry"-by thuy</a>
+        <div class="piccontainer">
+          <h3><i>Girls like me don't cry</i></h3>
+            <!--Link for song with title and artist name-->
+            <a href="https://open.spotify.com/track/2DtUUBwYwEzKMTMDrc5EiO?si=4a965fee529f4a44">
+            <img src="pic/thuy.jpg" id="songpic">
+            <div class="picoverlay">
+              <div class="pictext">Song of the month</div>
+            </div>
+          </a>
+        </div>
         <!--love song header-->
-        <h3>Love Song:</h3>
-          <!--Link for song with title and artist name-->
-          <a href="https://open.spotify.com/track/45A5ewaDNmoZltJgLY8DTN?si=9b306234c3284dcc">
-          "Mere Rang Mein Rangne Wali"-by S.P. Balasubrahmanyam</a>
+        <div class="piccontainer">
+          <h3><i>Mere Rang Mein Rangne Wali</i></h3>
+            <!--Link for song with title and artist name-->
+            <a href="https://open.spotify.com/track/45A5ewaDNmoZltJgLY8DTN?si=9b306234c3284dcc">
+            <img src="pic/MereRang.jpg" id="songpic">
+            <div class="picoverlay">
+              <div class="pictext">Love Song</div>
+            </div>
+          </a>
+        </div>
         <!--forever song header-->
-        <h3>Forever Song:</h3>
+        <div class="piccontainer">
+          <h3><i>It's the Time to Disco</i></h3>
           <!--Link for song with title and artist name-->
           <a href="https://open.spotify.com/track/3hCUkos0NxuSFl73oOHJzb?si=609ea9e6ff2d4023">
-          "It's the time to Disco"-by SFdhankar-Ehsaan-Loy, Vasundhara Das, and etc </a>
+            <img src="pic/disco.jpg" id="songpic">
+            <div class="picoverlay">
+              <div class="pictext">Forever Song</div>
+            </div>
+          </a>
+        </div>
     </div>
+      <h2 class = "head2">Favorite People</h2>
+      <!-- Requirement-1.L -->
+      <!-- pic of first favorite person-->
+      <div id = "flex-container1">
 
-    <h2>Favorite People</h2>
-    <!-- Requirement-1.L -->
-    <!-- pic of first favorite person-->
-      <figure>
-        <!-- Requirement-1.N -->
-          <!--image of fav person 1-->
-        <img src="pic/baba.JPG" alt="Grandpa" style="width:300px;height:400px;">
-          <!-- Requirement-1.M -->
-          <!--caption favorite person-->
-          <figcaption>This is my grandpa, and I used to call him Baba.</figcaption>
-      </figure>
+        <figure>
+          <!-- Requirement-1.N -->
+            <!--image of fav person 1-->
+          <img src="pic/baba.JPG" alt="Grandpa" style="width:300px;height:400px;">
+            <!-- Requirement-1.M -->
+            <!--caption favorite person-->
+            <figcaption>This is my grandpa, and I used to call him Baba.</figcaption>
+        </figure>
 
-      <!-- pic of second favorite person-->
+        <!-- pic of second favorite person-->
+        <figure>
+          <!-- Requirement-1.N -->
+            <!--image of fav person 1-->
+          <img src="pic/mavpic.jpg" alt="Cousin" style="width:300px;height:400px;">
+            <!-- Requirement-1.M -->
+            <!--caption favorite person-->
+            <figcaption>This is my little cousin, Mavleen.</figcaption>
+        </figure>
+      
       <figure>
-        <!-- Requirement-1.N -->
-          <!--image of fav person 1-->
-        <img src="pic/mavpic.jpg" alt="Cousin" style="width:300px;height:400px;">
-          <!-- Requirement-1.M -->
-          <!--caption favorite person-->
-          <figcaption>This is my little cousin, Mavleen.</figcaption>
-      </figure>
-    
-    <figure>
-        <!-- Requirement-1.N -->
-          <!--image of fav person 3-->
-        <img src="pic/Csitting.jpg" alt="Charles" style="width:300px;height:400px;">
-          <!-- Requirement-1.M -->
-          <!--caption favorite person-->
-          <figcaption>This is my good friend, Charles.</figcaption>
-    </figure> 
+          <!-- Requirement-1.N -->
+            <!--image of fav person 3-->
+          <img src="pic/Csitting.jpg" alt="Charles" style="width:300px;height:400px;">
+            <!-- Requirement-1.M -->
+            <!--caption favorite person-->
+            <figcaption>This is my good friend, Charles.</figcaption>
+      </figure> 
+    </div>
   
 
   <!-- Requirement-1.C -->
   <footer>
-    <p>Created by Shavleen Singh</p>
-    <a href= "index.html">Back to homepage</a><br>
-    <a href= "interest.html">Top of page</a><br>
+    <p class="author">Created by Shavleen Singh</p>
+    <p><a href= "index.html" class = "direct">Back to homepage</a></p>
+    <p><a href= "interest.html" class = "direct">Top of page</a></p>
   </footer>
 </body>
 

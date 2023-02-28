@@ -1,7 +1,20 @@
 <!DOCTYPE html>
   <html lang="en">
-<!--conatiner for the naviagtion and top of page-->
+<!--container for the naviagtion and top of page-->
   <head>
+    <!-- External Stylesheets are great for reusable styles -->
+    <link rel="stylesheet" href="css/styles.css"/>
+    <link rel="layoutsheet" href="css/layout.css"/>
+    <style>
+      body{
+        background: rgb(0,173,226);
+        background: linear-gradient(
+          68.7deg, rgb(138, 129, 195) 13.2%,
+          rgba(85, 108, 243, 0.746) 29.8%, 
+          rgb(88, 175, 251) 48.9%, 
+          rgb(91, 199, 232) 68.2%,
+          rgb(108, 223, 122) 95.4%);}
+    </style>
     <meta charset="UTF-8">
     <!--what will show on the tab of your website-->
     <title>Shavleen Singh | homepage</title>
@@ -11,7 +24,7 @@
       <nav>
         <div class="topnav">
           <!--Hyperlinks for the Naviations-->
-          <a class="active" href="index.html">Home</a>
+          <a class = "active" href="index.html">Home</a>
           <a href="interest.html#about">Interests</a>
           <a href="Favorites.html">Favorites</a>
           <a href="https://www.youtube.com/watch?v=eBGIQ7ZuuiU&ab_channel=YouGotRickRolled">Other</a>
@@ -20,70 +33,89 @@
   
 
   <!--The main header of the page-->
-  <header>
+  <header class="homehead">
     <h1>All About Shavleen!</h1>
   </header>
-  
+    <img src="pic/logo.jpg" class = logo width="100" height="140">
+
   <!--is what the rest of the page has holding the images hyperlinks and etc-->
     <!--This shows an image of me and I sized it-->
-    <img src="pic/hawaii-rshirt.jpg" alt="picture of me" style="width:500px;height:600px;">
-    
-    <!-- Requirement-1.P-->
-    <!--a command that the user can open and close to see a description-->
-    
-    <details>
-          <!-- Requirement-1.Q -->
-        <!--this what the user would click on which is the summary-->
-        <summary>Hawaii 2023</summary>
-          <!--This is the paragraph you'd get once you click on the summary-->
-          <p>This picture was taken on the big island of Hawaii.
-							We were looking for a <br> certain Kailua Bay, but got lost. 
-							This is actually one of the attractions in a <br> hotel or Inn type stay.
-							We took a wrong turn and dound these beautiful trees <br> and felt it was a good place to take a picture.</p>
-    </details>
+  <div id="row">
+    <div id="column">
+      <div class="flex-container">
+        <div>
+          <img src="pic/hawaii-rshirt.jpg" alt="picture of me" style ="width:300px;height:400px;">
+          
+          <!-- Requirement-1.P-->
+          <!--a command that the user can open and close to see a description-->
+          
+          <details>
+                <!-- Requirement-1.Q -->
+              <!--this what the user would click on which is the summary-->
+              <summary p class="summary">Hawaii 2023</summary>
+                <!--This is the paragraph you would get once you click on the summary-->
+                <p class="summary">This picture was taken on the big island of Hawaii.
+                    We were looking for a certain Kailua Bay, but got lost. 
+                    This is actually one of the attractions in a hotel or Inn type stay.
+                    We took a wrong turn and dound these beautiful trees and felt it was a good place to take a picture.</p>
+          </details>
+        </div>
+      </div>
+    </div>
+    <div id="column">
+      <div>
+        <h2 class="head2">Background</h2> 
+      </div>
+        <div>
+          <ul class="bullets">
+            <li>I was born in Anaheim, California.</li>
+            <li>I will be 21 on September 5th</li>
+            <li>I grew up in Corona, California.</li>
+            <li>I am the youngest of three kids.</li>
+            <li>Grew up with my grandparents.</li>
+            <li>My grandpa passed away in 2020.</li>
+            <li>I have many <a href= "interest.html" class="hobdir">hobbies</a> that I enjoy.</li>
+          </ul>
+        </div>  
+    </div>
+  </div>
 
-      <h2>Background</h2> 
-    <div>
-      <ul>
-        <li>I was born in Anaheim, California.</li>
-        <li>I will be 21 on September 5th</li>
-        <li>I grew up in Corona, California.</li>
-        <li>I am the youngest of three kids.</li>
-        <li>Grew up with my grandparents.</li>
-        <li>My grandpa passed away in 2020.</li>
-        <li>I have many <a href= "index.html">hobbies</a> that I enjoy.</li>
-      </ul>
-    </div>  
+  
+    <h2 class="head2">Meet the Family</h2>
+    <div class="flex-container">  
+      <div>
+        <h3 class="famtype"><u>Parents:</u></h3>
+          
+                <!-- Requirement-1.L -->
+                <!-- pic of my parents-->
+                <figure>
+                    <!-- Requirement-1.N -->
+                    <!--image parents-->
+                    <img src="pic/parents.jpg" alt="parents" style="width:300px;height:400px;"/>  
+                  <!--caption favorite person-->
+                  <figcaption class ="caps">These are my parents Harpreet and Sharanjeet.</figcaption>
+                </figure>
+      </div>
 
-
-
-
-      <h2>Meet the Family</h2>
-        <h3><u>Parents:</u></h3>
-    
-          <!-- Requirement-1.L -->
-          <!-- pic of my parents-->
-          <figure>
-              <!-- Requirement-1.N -->
-                <!--image parents-->
-              <img src="pic/parents.jpg" alt="parents" style="width:300px;height:400px;"/>  
-              <!--caption favorite person-->
-            <figcaption>These are my parents Harpreet and Sharanjeet.</figcaption>
-          </figure>
-
-      <h3><u>Sisters:</u></h3>
-      <!-- Requirement-1.L -->
-      <!-- pic of first favorite person-->
-        <figure>
-          <!-- Requirement-1.N -->
-            <!--image parents-->
-          <img src="pic/sis.jpg" alt="Sisters" style="width:300px;height:400px;">  
-          <!--caption favorite person-->
-          <figcaption>These are my older sisters on the left Shalveen<br>
-          on the right  Shavneet.</figcaption>
-        </figure>
       
-        <h3><u>Grandparents:</u></h3>
+      <div> 
+        <h3 class="famtype"><u>Sisters:</u></h3>
+        <!-- Requirement-1.L -->
+        <!-- pic of first favorite person-->
+          <figure>
+            <!-- Requirement-1.N -->
+              <!--image parents-->
+            <img src="pic/sis.jpg" alt="Sisters" style="width:300px;height:400px;">  
+            <!--caption favorite person-->
+            <figcaption class="caps">These are my older sisters on the left Shalveen<br>
+            on the right  Shavneet.</figcaption>
+          </figure>
+      </div>
+    </div>
+
+    <div class="flex-container">  
+      <div>
+        <h3 class="famtype"><u>Grandparents:</u></h3>
         <!-- Requirement-1.L -->
         <!-- pic of first favorite person-->
           <figure>
@@ -91,17 +123,19 @@
               <!--image parents-->
             <img src="pic/babaxmas.jpg" alt="grandparents" style="width:500px;height:400px;">  
             <!--caption-->
-            <figcaption>These are my grandparents I call them Mamma and Baba.</figcaption>
+            <figcaption class="caps">These are my grandparents I call them Mamma and Baba.</figcaption>
           </figure>
-        
+      </div>
+    </div>
 
 
-    <!--This is my footer and it has who created it and has helpful links-->
-         <footer>
-          <!--paragraphs help to make new lines and link to other things -->
-          <p>Created by Shavleen Singh</p>
-          <p><a href= "interest.html">Go to Interests page</a></p>
-          <p><a href= "index.html"> Top of page</a></p>
-				</footer>
+        <!--This is my footer and it has who created it and has helpful links-->
+            <footer>
+              <!--paragraphs help to make new lines and link to other things -->
+              <p class="author">Created by Shavleen Singh</p>
+              <p><a href= "interest.html" class = "direct">Go to Interests page</a></p>
+              <p><a href= "index.html" class = "direct"> Top of page</a></p>
+            </footer>
+
   </body>
 </html>
