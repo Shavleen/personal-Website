@@ -107,7 +107,7 @@ table {
 
 /*this is the text for the summary*/
 p.summary {
-	font-family:New Century Schoolbook;
+	font-family:"New Century Schoolbook";
   font-size: 10px;
   font-weight: bold;
 	text-align: left;
@@ -149,7 +149,7 @@ ul.bullets{
 /*These are the headings on homepage for background and meet the family*/
 /*learn more abt me h2 on interest page*/
 .head2{
-	font-weight: 30px;
+	font-weight: 30;
 	font-family:Copperplate, Papyrus, fantasy;
 	font-size: 25px;
 	color:rgb(22, 82, 150);
@@ -163,7 +163,7 @@ ul.bullets{
 }
 /*labels for the different family*/
 .famtype{
-	font-weight: 5px;
+	font-weight: 5;
 	border-style: ridge;
 	border-bottom:thin;
 	border:2px solid rgb(64, 63, 63);
@@ -173,7 +173,7 @@ ul.bullets{
 	text-align:left;
 	background-color: rgba(206, 180, 240, 0.533);
 	padding-top: 5px;
-  padding-right: none;
+  padding-right:0%;
   padding-bottom: 5px;
   padding-left: 5px;
 }
@@ -182,8 +182,8 @@ ul.bullets{
 .caps{
 	font-family: 'Times New Roman', Times, serif;
 	font-size: 15px;
-	font-style: bold;
-	font-weight: 100px;
+	font-style:normal;
+	font-weight: 100;
 	color: rgb(77, 58, 71);
 	-webkit-text-stroke: 0.20px rgb(71, 145, 248);
 }
@@ -202,7 +202,7 @@ a.hobdir:hover{
 }
 /*what it would like if you visited the sight already*/
 a.hobdir:visited{
-	color:rgb(83, 0, 128):blueviolet;
+	color:rgb(83, 0, 128);
 }
 
 /*this the naviagtion functions*/
@@ -214,7 +214,7 @@ a.hobdir:visited{
 
 /* shows the active page and what page your cureently on being a different color*/
 .topnav a {
-	float: center;/* Requirement-2.11 */
+	float:none;/* Requirement-2.11 */
 	color: #ffffff;
   text-align: center;
   padding: 25px 35px;
@@ -234,7 +234,7 @@ a.hobdir:visited{
 /*Main header on the homepage of website*/
 /*main header for interest page*/
 .homehead h1{/* Requirement-2.A */
-	font-weight: 5px;
+	font-weight: 5;
 	font-family:Copperplate, Papyrus, fantasy;
 	color:white;
 	font-size: 30px;
@@ -245,7 +245,7 @@ a.hobdir:visited{
 
 /*footer telling who the website was made from*/
 p.author{
-	font-weight: 15px;
+	font-weight: 15;
 	font-family:'Brush Script MT', cursive;
 	color: rgba(24, 55, 181, 0.81);
 	-webkit-text-stroke: 0.25px rgba(24, 55, 181, 0.81);
@@ -254,7 +254,7 @@ p.author{
 /*link for hobbies and formatting it*/
 a.direct:link{
 	font-size: 15px;
-	font-family:American Typewriter, serif ;
+	font-family:"American Typewriter, serif";
   font-weight: bold;
 	color:rgb(85, 68, 174);
 	text-decoration: none;
@@ -293,7 +293,7 @@ a.direct:visited{
 }
 
 .poem h3{
-font-family:Brush Script MT, Brush Script Std, cursive;
+font-family:"Brush Script MT, Brush Script Std, cursive";
 color:rgb(52, 155, 157);
 font-size: 30px;
 text-align: left;
