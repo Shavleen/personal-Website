@@ -194,7 +194,7 @@ ul.bullets{
 	font-style:normal;
 	font-weight: 100;
 	color: rgb(77, 58, 71);
-	text-shadow: 0.20px rgb(71, 145, 248);
+	text-shadow: 1px rgb(71, 145, 248);
 }
 
 /*direct links to go the interest pages that point you toward my other webpages*/
@@ -257,7 +257,7 @@ p.author{
 	font-weight: 15;
 	font-family:'Brush Script MT', cursive;
 	color: rgba(24, 55, 181, 0.81);
-	text-shadow: 0.25px rgba(24, 55, 181, 0.81);
+	text-shadow: 1px rgba(24, 55, 181, 0.81);
 }
 
 /*link for hobbies and formatting it*/
